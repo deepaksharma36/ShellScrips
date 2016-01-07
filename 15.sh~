@@ -1,0 +1,7 @@
+for cmd in `cat cmd.txt`
+do
+	 man $word >> helpFile.txt
+	
+done
+less helpFile.txt
+

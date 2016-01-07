@@ -1,0 +1,18 @@
+echo "Give us the UserName"
+read userName
+ 
+
+time=0
+while true
+do
+	who|grep -i $userName >> /tmp/null
+	if [ $? -eq 0 ]
+	then
+		echo "User $userName is login by $time delay"
+		exit
+	else
+		sleep 60
+		time=`expr $time + 1`
+done
+
+

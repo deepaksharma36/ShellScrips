@@ -1,0 +1,16 @@
+echo "Lets do advance stuff"
+read num
+if [ $num -lt 10 ] 
+then
+ echo "Too small to "
+elif [ $num -lt 20 ] 
+then
+	echo "it should be between 11 and 19"
+elif [ $num -eq 44 ]
+then
+	echo "yup"
+else 
+	echo "dont know"
+fi
+# eq ne gt lt 
+

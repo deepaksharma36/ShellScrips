@@ -1,0 +1,14 @@
+echo "Give us the fileName"
+read fileName
+terminal=`tty`
+exec < $fileName #exec taking argument from file 
+count=1
+
+while read line
+do
+	echo $count.$line
+	count=`expr $count + 1`
+done
+
+exec < $terminal
+
